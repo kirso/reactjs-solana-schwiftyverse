@@ -210,6 +210,7 @@ const App = () => {
       // Call Solana program here.
       console.log('Fetching GIF list...');
       // eslint-disable-next-line
+      getGifList();
     }
   }, [walletAddress]);
 
