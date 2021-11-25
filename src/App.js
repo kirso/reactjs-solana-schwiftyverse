@@ -232,7 +232,7 @@ const App = () => {
             className='footer-text'
             href={TWITTER_LINK}
             target='_blank'
-            rel='noreferrer'>{`Tinkered @${TWITTER_HANDLE}`}</a>
+            rel='noreferrer'>{`Built by @${TWITTER_HANDLE}`}</a>
         </div>
       </div>
     </div>
