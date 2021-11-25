@@ -10,7 +10,7 @@ import idl from './idl.json';
 import kp from './keypair.json';
 
 // SystemProgram is a reference to the Solana runtime
-const { SystemProgram } = web3;
+const { SystemProgram, Keypair } = web3;
 
 // Create a keypair for the account that will hold the GIF data
 const arr = Object.values(kp._keypair.secretKey);
@@ -181,7 +181,6 @@ const App = () => {
     }
   };
   // Check if Phantom is connected when the component is mounted on every render of the page
-
   useEffect(() => {
     const onLoad = async () => {
       await isConnected();
@@ -204,12 +203,12 @@ const App = () => {
       setGifList(null);
     }
   };
+
   useEffect(() => {
     if (walletAddress) {
       console.log('Fetching GIF list...');
       // Call Solana program here.
       console.log('Fetching GIF list...');
-      // eslint-disable-next-line
       getGifList();
     }
   }, [walletAddress]);
