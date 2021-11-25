@@ -172,7 +172,7 @@ const App = () => {
             {/* We use index as the key instead, also, the src is now item.gifLink */}
             {gifList.map((item, index) => (
               <div className='gif-item' key={index}>
-                <img alt='gif link' src={item.gifLink} />
+                <img src={item.gifLink} />
               </div>
             ))}
           </div>
@@ -206,8 +206,6 @@ const App = () => {
 
   useEffect(() => {
     if (walletAddress) {
-      console.log('Fetching GIF list...');
-      // Call Solana program here.
       console.log('Fetching GIF list...');
       getGifList();
     }
