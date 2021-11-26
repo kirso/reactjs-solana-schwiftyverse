@@ -129,7 +129,6 @@ const App = () => {
       console.log('Error creating BaseAccount account:', error);
     }
   };
-
   // Render the button if the user hasn't connected the wallet
   const renderNotConnectedContainer = () => (
     <button className='cta-button connect-wallet-button' onClick={connectWallet}>
