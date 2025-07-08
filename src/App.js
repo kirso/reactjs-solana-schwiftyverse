@@ -29,7 +29,7 @@ const opts = {
 };
 
 // Constants
-const TWITTER_HANDLE = 'SoKirill';
+const TWITTER_HANDLE = 'kirso';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
